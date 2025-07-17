@@ -59,3 +59,9 @@ int main() {
 
     return 0;
 }
+/*If we add extra members:
+
+If we add more members that can still be represented within the range of an int, the size will remain 4 bytes.
+
+If we add a member that requires a larger value (like a value that can't fit in an int but fits in a long),
+ the enum size might increase to 8 bytes (size of long) depending on the compiler implementation.*/
